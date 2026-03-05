@@ -1,0 +1,70 @@
+[
+  {
+    "remarks": "Торренты напрямую",
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ]
+  },
+  {
+    "remarks": "Блокируем QUIC",
+    "outboundTag": "block",
+    "port": "443",
+    "network": "udp"
+  },
+  {
+    "remarks": "Блокируем IP",
+    "outboundTag": "block",
+    "ip": [
+      "geoip:nnymph-block"
+    ]
+  },
+  {
+    "remarks": "Блокируем домены",
+    "outboundTag": "block",
+    "domain": [
+      "geosite:nnymph-block"
+    ]
+  },
+  {
+    "remarks": "IP напрямую",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private",
+      "geoip:nnymph-direct",
+      "geoip:discord"
+    ]
+  },
+  {
+    "remarks": "Домены напрямую",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private",
+      "geosite:ru-available-only-inside",
+      "geosite:nnymph-direct",
+      "geosite:youtube",
+      "geosite:discord"
+    ]
+  },
+  {
+    "remarks": "IP через прокси",
+    "outboundTag": "proxy",
+    "ip": [
+      "geoip:nnymph-proxy",
+      "geoip:ru-blocked"
+    ]
+  },
+  {
+    "remarks": "Домены через прокси",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:ru-blocked",
+      "geosite:nnymph-proxy"
+    ]
+  },
+  {
+    "remarks": "Весь остальной трафик напрямую",
+    "port": "0-65535",
+    "outboundTag": "direct"
+  }
+]

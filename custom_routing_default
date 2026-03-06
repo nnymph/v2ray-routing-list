@@ -52,9 +52,18 @@
     ]
   },
   {
-    "remarks": "Войс дискорда через прокси (тест)",
+    "remarks": "Войс дискорда через прокси #1",
     "outboundTag": "proxy",
-    "port": "19294-19344, 50000-50100",
+    "port": "19294-19344",
+    "network": "udp",
+    "ip": [
+      "geoip:discord"
+    ]
+  },
+  {
+    "remarks": "Войс дискорда через прокси #2",
+    "outboundTag": "proxy",
+    "port": "50000-50100",
     "network": "udp",
     "ip": [
       "geoip:discord"

@@ -30,7 +30,8 @@
     "remarks": "IP напрямую",
     "outboundTag": "direct",
     "ip": [
-      "geoip:private"
+      "geoip:private",
+      "geoip:nnymph-direct"
     ]
   },
   {

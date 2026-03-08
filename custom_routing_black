@@ -49,12 +49,7 @@
     "ip": [
       "geoip:nnymph-proxy",
       "geoip:ru-blocked",
-      "geoip:cloudflare",
-      "geoip:cloudfront",
-      "geoip:facebook",
-      "geoip:fastly",
-      "geoip:netflix",
-      "geoip:twitter"
+      "geoip:nnnymph-all-blocked"
     ]
   },
   {
